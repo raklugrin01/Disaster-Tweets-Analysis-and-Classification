@@ -105,7 +105,7 @@ def model_predict(text):
     
     preds = model.predict(text)
     print(preds)
-    pred = (preds[0][0] > 0.4).astype(np.int)
+    pred = (preds[0][0] > 0.42).astype(np.int)
     
     return pred
 
@@ -128,11 +128,6 @@ def home():
     #home page
     return render_template('home.html')
 
-import logging
-import sys
-
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
