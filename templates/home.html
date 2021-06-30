@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Disaster Tweets</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='Tsunami-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style>
+            ::-webkit-input-placeholder {
+               color: rgb(6, 135, 209);
+               line-height:150px;
+               text-align:center;
+               text-transform: capitalize ;
+               text-decoration: wavy;
+            }
+            :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+               color: rgb(6, 135, 209);
+               text-align: center;
+               line-height:150px;
+               text-transform: capitalize ;
+               text-decoration: wavy;  
+            }
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: rgb(6, 135, 209);
+               text-align: center;
+               line-height:150px;
+               text-transform: capitalize ;
+               text-decoration: wavy;  
+            }
+            :-ms-input-placeholder {  
+               color: rgb(6, 135, 209);
+               text-align: center;
+               line-height:150px;
+               text-transform: capitalize ;
+               text-decoration: wavy;  
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    	<div class="header">
+            <div class="container">
+    	    	<h1 class='container-heading'><span>Disaster Tweets Classifier</span> for Tweets</h1>
+                <br>
+                <div class='description'>
+    			    <p>A Deep Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		    </div>
+            </div>
+    	</div>
+
+        
+        <div class="table-container">
+            <table class="table table-bordered center" style="width: 45%; text-align: justify; text-align: center; vertical-align: middle">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:25%; text-align: center;">Examples</th>
+                        <th scope="col" style="width:75%; text-align: center;">Tweets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center;">Disaster</th>
+                        <td>Traffic accident N CABRILLO HWY/MAGELLAN AV MIR (08/06/15 11:03:58)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">Non-Disaster</th>
+                        <td>OMG.. That was an outstanding finish from Lionel Messi!!</td>
+                    </tr>
+                    
+                </tbody>
+            </table>    
+        </div>
+        <!-- Text Area -->
+
+    	<div class="dl-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+        		<textarea class='message-box' name="tweet" rows="10" cols="90" wrap = "hard" placeholder="Enter your Tweet here..."></textarea><br/>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+        
+        
+        <!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/raklugrin01">
+                    <i class="fab fa-github fa-lg contact-icon"></i>
+                </a>
+                <a target="_blank" href="https://www.kaggle.com/mohitnirgulkar">
+                    <i class="fab fa-kaggle fa-lg contact-icon" style='color:rgb(0, 153, 255)'></i>
+                </a>
+            </div>
+           
+            <p class='footer-description'>&nbsp;&nbsp;<b> Made with ❤️ by Mohit Nirgulkar.</b></p>
+        </div>
+
+    </body>
+</html>
