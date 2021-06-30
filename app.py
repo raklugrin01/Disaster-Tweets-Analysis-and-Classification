@@ -8,9 +8,6 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 from nltk.tokenize import word_tokenize
-import nltk
-nltk.download('wordnet')
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
