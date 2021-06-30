@@ -2,14 +2,17 @@
 from flask import Flask, request, render_template
 import numpy as np
 import pickle
-from keras.models import load_model
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow import keras
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('wordnet')
+nltk.download('stopwards')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-
 app = Flask(__name__)
 
 model = load_model('model_BiLSTM.h5')
