@@ -10,5 +10,5 @@ scikit-learn==0.24.2
 matplotlib==3.4.2
 pandas==1.2.4
 keras==2.4.3
-re==2021.4.4
+regex==2021.4.4
 nltk==3.6.2
