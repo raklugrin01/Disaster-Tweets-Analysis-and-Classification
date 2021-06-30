@@ -10,7 +10,7 @@ import re
 from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('wordnet')
-nltk.download('stopwoords')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
@@ -115,7 +115,7 @@ def index():
     #home page
     return render_template('home.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['POST','GET'])
 def predict():
     if request.method == 'POST':
         tweet = request.form['tweet']
