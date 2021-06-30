@@ -1,1 +1,7 @@
 *.ipynb
+/tests
+/tmp
+/obj
+*.psd
+*.pdf
+/test
