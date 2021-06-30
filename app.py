@@ -127,5 +127,11 @@ def predict():
 def home():
     #home page
     return render_template('home.html')
+
+import logging
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 if __name__ == '__main__':
     app.run(debug=True)
