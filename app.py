@@ -10,7 +10,7 @@ import re
 from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('wordnet')
-nltk.download('stopwards')
+nltk.download('stopwoords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
