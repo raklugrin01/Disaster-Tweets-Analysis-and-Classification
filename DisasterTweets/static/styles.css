@@ -1,0 +1,187 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+  	flex-direction: column;
+}
+.header{
+    font-size: 14px;
+	padding: 20px;
+	align-items: baseline;
+	flex-shrink: 0;
+	position:relative;
+	background: linear-gradient(45deg, #ffffff, #ffffff, #f9f9f9, #eeeeee, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+.container-heading{
+    margin: 0;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.container span{
+    color: #0066ff;
+}
+
+.description p{
+    font-style:normal;
+    font-size: 15px;
+    margin: 3px 0 0;
+}
+
+/* Text Area */
+.dl-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+.img-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+.table-container{
+	padding-top: 50px;
+}
+.message-box{
+    
+    display:table-cell;
+    margin-bottom: 20px;
+	resize: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px #c4dbff;
+	outline: none !important;
+}
+.message-box:active{
+    box-shadow: 0 0;
+	outline: none !important;
+}
+
+.message-box:hover{
+    color: #2e2f30;
+	outline: none !important;
+    border: 1px solid #1e2631;
+}
+/* Predict Button */
+.my-cta-button{
+    background: #f9f9f9;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    box-shadow: 3px 3px #9c9c9c;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: #0066ff;
+    border: 2px solid #0066ff;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+
+
+/* home Button */
+.my-cta-button-home{
+    background: #f9f9f9;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    box-shadow: 3px 3px #9c9c9c;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button-home:hover{
+    color: #0066ff;
+    border: 2px solid #0066ff;
+}
+
+.my-cta-button-home:active{
+    box-shadow: 0 0;
+}
+
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background: linear-gradient(45deg, #ffffff, #ffffff, #f9f9f9, #eeeeee, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: #ff0000;
+}
+
+.safe{
+    color: green;
+}
+
+.gif{
+	width: 30%;
+}
+
+
