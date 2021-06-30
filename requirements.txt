@@ -1,3 +1,4 @@
+python==
 Flask==2.0.1
 gunicorn==20.1.0
 itsdangerous==2.0.1
@@ -12,3 +13,4 @@ pandas==1.2.4
 keras==2.4.3
 regex==2021.4.4
 nltk==3.6.2
+tensorflow>=2.2.0
