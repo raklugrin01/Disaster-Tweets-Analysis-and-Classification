@@ -5,12 +5,12 @@
 
 # Project Description
 
-Twitter has become an important communication channel in times of emergency.
-The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time.
+Twitter has become an important communication channel in times of emergency.   
+The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time.   
 Because of this, more agencies are interested in programatically monitoring Twitter (i.e. disaster relief organizations and news agencies).
 
 - Total approach towards the project can be seen on kaggle
-- 
+
   - **Machine Learning approach** : https://www.kaggle.com/mohitnirgulkar/disaster-tweets-classification-using-ml
   - **Deep Learning approach** : https://www.kaggle.com/mohitnirgulkar/disaster-tweets-classification-using-deep-learning
 
@@ -25,8 +25,8 @@ Because of this, more agencies are interested in programatically monitoring Twit
 
 # Resources Used
 - **Packages** : Pandas, Numpy, Matplotlib, Plotly, Word-cloud, Tensorflow, Scikit-Learn, Keras, Keras-tuner, Nltk etc.
-- **Dataset**  : _https://www.kaggle.com/c/nlp-getting-started_
-- **Word Embeddings** : _https://www.kaggle.com/danielwillgeorge/glove6b100dtxt_
+- **Dataset**  : https://www.kaggle.com/c/nlp-getting-started
+- **Word Embeddings** : https://www.kaggle.com/danielwillgeorge/glove6b100dtxt
 
 ## 1. Exploratory Data Analysis on the Dataset
   
@@ -103,13 +103,13 @@ Because of this, more agencies are interested in programatically monitoring Twit
 
 # Scope of Improvemment
 
-- We can always use large dataset which covers almost evry type of data for both machine learning and deep learning
+- We can always use large dataset which covers almost every type of data for both machine learning and deep learning
 - We can use the best pretrained models but they require a lot of computational power
 - Also there are various ways to increase model accuracy like k-fold cross validation, different data preprocessing techniques better than used here
 
 # Conclusion 
 
-The Data analysis and modelling was sucessfully done, and the deep learning model was deployed on Heroku
+The Data analysis and modelling was sucessfully done, and the Deep Learning model was deployed on [Heroku](https://disastertweetsdl.herokuapp.com/)
 
 Please do ⭐ the repository, if it helped you in anyway.
 
