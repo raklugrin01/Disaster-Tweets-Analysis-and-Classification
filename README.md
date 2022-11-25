@@ -1,9 +1,9 @@
-<img src="https://user-images.githubusercontent.com/60045850/126037645-ab8f44dd-1060-411e-81ea-80c7e13b79ac.jpeg" alt="DisasterTweets" width="1600" height="450" />
+# Disaster Tweets Analysis and Classification
 
 
 [![Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/c/nlp-getting-started) [![Language](https://img.shields.io/badge/Lang-Python-brightgreen)](https://www.python.org/) [![Library](https://img.shields.io/badge/Library-Nltk%2C%20Tensorflow-orange)](https://stackshare.io/stackups/nltk-vs-tensorflow) [![ML Library](https://img.shields.io/badge/ML-Scikit--learn-yellowgreen)](https://scikit-learn.org/) [![DL Library](https://img.shields.io/badge/DL-Keras-red)](https://keras.io/)
 
-# Project Description
+## Project Description
 
 Twitter has become an important communication channel in times of emergency.   
 The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time.   
@@ -14,7 +14,7 @@ Because of this, more agencies are interested in programatically monitoring Twit
   - **Machine Learning approach** : https://www.kaggle.com/mohitnirgulkar/disaster-tweets-classification-using-ml
   - **Deep Learning approach** : https://www.kaggle.com/mohitnirgulkar/disaster-tweets-classification-using-deep-learning
 
-# Project Contents
+## Project Contents
 
 1. Exploratory Data Analysis
 2. EDA after Data Cleaning 
@@ -23,7 +23,7 @@ Because of this, more agencies are interested in programatically monitoring Twit
 5. Deep Learning approach for classifying Tweets data
 6. Model Deployment
 
-# Resources Used
+## Resources Used
 - **Packages** : Pandas, Numpy, Matplotlib, Plotly, Word-cloud, Tensorflow, Scikit-Learn, Keras, Keras-tuner, Nltk etc.
 - **Dataset**  : https://www.kaggle.com/c/nlp-getting-started
 - **Word Embeddings** : https://www.kaggle.com/danielwillgeorge/glove6b100dtxt
